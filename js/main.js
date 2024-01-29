@@ -1,5 +1,5 @@
 "use strict";
-//==========================================
+//==========================================//
 const $ = document.querySelector.bind(document);
 
 const quiz = $(".quiz");
@@ -8,20 +8,20 @@ const btnNext = $(".quiz__next-btn");
 let count = 0;
 let userScore = 0;
 
-if (typeof questions !== "undefined" && questions.length > 0) {
+if (questions !== "undefined" && questions.length) {
   quiz.classList.remove("hidden");
-  showQuetions(count);
+  showQuestions(count);
 } else {
   warning.classList.remove("hidden");
 }
 
-btnNext.addEventListener("click", nextQuetion);
+btnNext.addEventListener("click", nextQuestions);
 
-function showQuetions(index) {
+function showQuestions(index) {
   const title = $(".quiz__title");
   const list = $(".quiz__list");
   const total = $(".quiz__total");
-  let progress = $(".quiz__progress-inner");
+  const progress = $(".quiz__progress-inner");
   title.innerHTML = `${questions[index].question}`;
   list.innerHTML = "";
   questions[index].options.forEach((item) => {
@@ -67,7 +67,7 @@ function optionSelected(answer) {
   options.forEach((item) => item.classList.add("disabled"));
 }
 
-function nextQuetion() {
+function nextQuestions() {
   const options = document.querySelectorAll(".quiz__option");
   const result = $(".result");
   const resultText = $(".result__text");
@@ -84,7 +84,7 @@ function nextQuetion() {
 
   if (options[0].classList.contains("disabled")) {
     count++;
-    showQuetions(count);
+    showQuestions(count);
   } else {
     alert("Выбери одно из вариантов");
   }
