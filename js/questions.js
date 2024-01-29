@@ -1,52 +1,48 @@
 const questions = [
   {
-    question: "Какое свойство запрещяет выделение текста?",
-    answer: "user-select: none",
+    question: "Как много стилей можно добавить к одному объекту?",
+    answer: "Неограниченное количество",
     options: [
-    "no-select: none",
-    "pointer-select: none",
-    "user-select: unset",
-    "user-select: none"
-    ]
+      "Не более 20",
+      "Не более 50",
+      "В промежутке от 1 до 30",
+      "Неограниченное количество",
+    ],
   },
   {
-    question: "Какой атрибут HTML5 указывает, что элемент является недоступным для редактирования?",
-    answer: "readonly",
+    question: "Где верно указано свойство?",
+    answer: "background: #fff;",
     options: [
-    "disabled",
-    "readonly",
-    "required",
-    "tabindex"
-    ]
+      "back-color: red;",
+      "background: #00;",
+      "bg: #fafafa;",
+      "background: #fff;",
+    ],
   },
   {
-    question: "Какой из следующих атрибутов не является новым в HTML5?",
-    answer: "checked",
+    question: "Что такое «outline»?",
+    answer: "Внешнее свечение блока",
     options: [
-    "autofocus",
-    "placeholder",
-    "required",
-    "checked"
-    ]
+      "Внешняя обводка блока",
+      "Установка границ для блока",
+      "Внешнее свечение блока",
+      "Установка тени блока",
+    ],
   },
   {
-    question: "Значением атрибута border может быть:",
-    answer: "2",
-    options: [
-    "top",
-    "left",
-    "2",
-    "green"
-    ]
+    question:
+      "Какой псевдокласс сработает при установке курсора в текстовое поле?",
+    answer: ":focus",
+    options: [":hover", ":active", ":visited", ":focus"],
   },
   {
-    question: "Для чего нужен атрибут autocomplete='off'?",
-    answer: "откл автозаполнения",
+    question: "Где верно создается «плавающий блок»?",
+    answer: "div {float: right}",
     options: [
-    "откл автозаполнения",
-    "вкл автозаполнения",
-    "делает input обязательным для заполнения",
-    "скрывает input"
-    ]
+      "div {float: right}",
+      "div {direction: rtl}",
+      "div {right: 0px}",
+      "div {position: right}",
+    ],
   },
-]
+];
